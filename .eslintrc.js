@@ -1,7 +1,16 @@
 module.exports = {
+    parser: '@typescript-eslint/parser',
+    plugins: ['@typescript-eslint'],
     globals: {
         ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION: true,
         page: true,
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
     rules: {
         '@typescript-eslint/no-unused-vars': 'off',
